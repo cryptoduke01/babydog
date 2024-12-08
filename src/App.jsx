@@ -51,33 +51,18 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <header className="relative flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-80px)] p-6 lg:p-16 space-y-6 lg:space-y-0 lg:space-x-10 overflow-hidden">
-  {/* Background Effects */}
-  <div className="absolute inset-0 bg-gradient-to-tr from-[#7dd3fc]/50 via-[#d0a77f]/30 to-[#a5b4fc]/40 z-0 pointer-events-none"></div>
-  <div className="absolute -top-10 -left-20 w-48 h-48 bg-[#d0a77f]/20 rounded-full filter blur-3xl z-0"></div>
-  <div className="absolute -bottom-20 -right-16 w-64 h-64 bg-[#7dd3fc]/30 rounded-full filter blur-2xl z-0"></div>
-
-  {/* Crypto Icons */}
-  <div className="absolute top-1/4 left-10 text-[#475569]/20 z-0 animate-float">
-    <SiSolana className="w-20 h-20" />
+      {/* Hero Section */}
+<header className="relative flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-80px)] p-6 lg:p-16 space-y-6 lg:space-y-0 lg:space-x-10 overflow-hidden">
+  {/* Floating Solana Icons */}
+  <div className="absolute top-10 left-5 lg:top-20 lg:left-20 animate-float">
+    <SiSolana className="text-[#6366f1] text-6xl lg:text-8xl opacity-50" />
   </div>
-  <div className="absolute bottom-1/4 right-10 text-[#475569]/20 z-0 animate-bounce">
-    <img
-      src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=024"
-      alt="Ethereum"
-      className="w-16 h-16 opacity-80"
-    />
-  </div>
-  <div className="absolute top-1/3 right-1/3 text-[#475569]/10 z-0 animate-pulse">
-    <img
-      src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=024"
-      alt="Bitcoin"
-      className="w-24 h-24"
-    />
+  <div className="absolute bottom-10 right-5 lg:bottom-20 lg:right-20 animate-float">
+    <SiSolana className="text-[#10b981] text-6xl lg:text-8xl opacity-50" />
   </div>
 
   {/* Text Content */}
-  <div className="relative z-10 max-w-md text-center lg:text-left">
+  <div className="max-w-md text-center lg:text-left z-10">
     <h2 className="text-5xl lg:text-6xl font-bold text-[#000000]">
       BabyDog <br /> <span className="text-[#D0A77F]">$MAX</span>
     </h2>
@@ -87,31 +72,31 @@ const App = () => {
     <div className="flex justify-center lg:justify-start space-x-6 mt-6">
       <a
         href="https://x.com/MaxOnSolan_?t=_jq6XJT_ZSXof-xPi2Fa3Q&s=09"
-        className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#1DA1F2] transition-transform transform hover:scale-110"
+        className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
       >
         <FaTwitter className="w-6 h-6" />
       </a>
       <a
         href="https://t.me/BabyDogOnSol"
-        className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#0088cc] transition-transform transform hover:scale-110"
+        className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
       >
         <FaTelegram className="w-6 h-6" />
       </a>
       <a
         href="https://dexscreener.com"
-        className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#6B7280] transition-transform transform hover:scale-110"
+        className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
       >
-        <img src={dex} className="w-6 h-6 rounded-full" alt="" />
+        <img src={dex} className="w-6 h-6 bg-black rounded-full border-7 border-[#fff]" alt="" />
       </a>
     </div>
   </div>
 
   {/* Dog Image */}
-  <div className="relative z-10">
+  <div>
     <img
       src={BabyDog}
       alt="Baby Dog"
-      className="w-72 h-72 lg:w-80 lg:h-80 object-cover rounded-full border-8 border-[#D0A77F] shadow-xl hover:scale-105 transform transition-transform"
+      className="w-72 h-72 lg:w-80 lg:h-80 object-cover rounded-full border-8 border-[#D0A77F] shadow-xl"
     />
   </div>
 </header>
