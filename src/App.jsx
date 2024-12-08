@@ -1,5 +1,6 @@
 import "./App.css";
 import BabyDog from "./assets/babydog.jpeg";
+import dex from './assets/dex.svg'
 import { FaTwitter, FaTelegram } from "react-icons/fa";
 import { SiSolana } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
@@ -8,14 +9,14 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#7dd3fc] to-[#a5b4fc] flex flex-col font-sans">
       {/* Navbar */}
-      <nav className="bg-[#D0A77F] p-4 flex justify-between items-center sticky top-0 shadow-lg">
-        <h1 className="text-2xl lg:text-3xl font-extrabold tracking-wide text-[#334155]">
+      <nav className="bg-[#D0A77F] p-4 flex justify-between lg:justify-center items-center sticky top-0 shadow-lg gap-x-10">
+        <h1 className="text-2xl lg:text-3xl font-extrabold tracking-wide text-[#000000]">
           $BabyDog
         </h1>
-        <ul className="flex space-x-6 text-black">
+        <ul className="flex space-x-6 text-black items-center">
           <li>
             <a
-              href="https://twitter.com"
+              href="https://x.com/MaxOnSolan_?t=_jq6XJT_ZSXof-xPi2Fa3Q&s=09"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#1DA1F2]"
@@ -25,7 +26,7 @@ const App = () => {
           </li>
           <li>
             <a
-              href="https://telegram.org"
+              href="https://t.me/BabyDogOnSol"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#0088cc]"
@@ -40,37 +41,49 @@ const App = () => {
               rel="noopener noreferrer"
               className="hover:text-[#6B7280]"
             >
-              <BiLinkExternal className="w-6 h-6" />
+              <img
+                src={dex}
+                className="w-6 h-6 bg-black rounded-full border-7 border-[#fff]"
+                alt=""
+              />
             </a>
           </li>
         </ul>
       </nav>
 
+
       {/* Hero Section */}
-      <header className="flex flex-col lg:flex-row items-center justify-between p-10 lg:p-20 space-y-10 lg:space-y-0">
+      <header className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-80px)] p-6 lg:p-16 space-y-6 lg:space-y-0 lg:space-x-10">
         {/* Text Content */}
         <div className="max-w-md text-center lg:text-left">
-          <h2 className="text-5xl lg:text-6xl font-bold text-[#334155]">
+          <h2 className="text-5xl lg:text-6xl font-bold text-[#000000]">
             $BabyDog <span className="text-[#D0A77F]">MAX</span>
           </h2>
-          <p className="mt-6 text-lg lg:text-xl font-medium text-[#475569]">
+          <p className="mt-4 text-lg lg:text-xl font-medium text-[#475569]">
             The cute little dog of Solana is staring at you, adore him! 🐾✨
           </p>
-          <div className="flex justify-center lg:justify-start space-x-6 mt-8">
+          <div className="flex justify-center lg:justify-start space-x-6 mt-6">
             <a
-              href="https://twitter.com"
-              className="bg-[#1DA1F2] text-white p-3 rounded-full shadow-lg hover:bg-[#1A91DA]"
+              href="https://x.com/MaxOnSolan_?t=_jq6XJT_ZSXof-xPi2Fa3Q&s=09"
+              className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
             >
               <FaTwitter className="w-6 h-6" />
             </a>
             <a
-              href="https://telegram.org"
-              className="bg-[#0088cc] text-white p-3 rounded-full shadow-lg hover:bg-[#0077B5]"
+              href="https://t.me/BabyDogOnSol"
+              className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
             >
               <FaTelegram className="w-6 h-6" />
             </a>
+            <a
+              href="https://dexscreener.com"
+              className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
+            >
+              <img src={dex} className="w-6 h-6 bg-black rounded-full border-7 border-[#fff]" alt="" />
+            </a>
           </div>
         </div>
+
         {/* Dog Image */}
         <div>
           <img
@@ -80,6 +93,7 @@ const App = () => {
           />
         </div>
       </header>
+
 
       {/* About, Tokenomics, Roadmap, Contact */}
       <section className="bg-white p-10 lg:p-20">
