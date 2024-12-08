@@ -1,5 +1,6 @@
 import "./App.css";
 import BabyDog from "./assets/babydog.jpeg";
+import NewDog from "./assets/newdog.jpeg"; // Replace with the correct file name of the new image
 import dex from "./assets/dex.svg";
 import { FaTwitter, FaTelegram } from "react-icons/fa";
 import { SiSolana } from "react-icons/si";
@@ -136,7 +137,47 @@ const App = () => {
           </div>
         </div>
       </section>
-
+{/* Our Dogs Section */}
+<section className="bg-[#f3f4f6] py-10 lg:py-20 px-6 lg:px-16">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-4xl lg:text-5xl font-bold text-[#334155] mb-6">
+      Meet Our Dogs
+    </h2>
+    <p className="text-lg lg:text-xl text-[#475569] mb-12">
+      BabyDog and friends are here to win your hearts! 💖
+    </p>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {/* Original Dog Image */}
+      <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+        <img
+          src={BabyDog}
+          alt="Baby Dog"
+          className="w-72 h-72 object-cover mx-auto rounded-full border-8 border-[#D0A77F] shadow-md"
+        />
+        <h3 className="text-2xl font-semibold mt-4 text-[#334155]">
+          BabyDog
+        </h3>
+        <p className="text-[#475569] mt-2">
+          The original and the cutest Baby Dog of Solana. 🐾
+        </p>
+      </div>
+      {/* New Dog Image */}
+      <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+        <img
+          src={NewDog}
+          alt="New Dog"
+          className="w-72 h-72 object-cover mx-auto rounded-full border-8 border-[#6366f1] shadow-md"
+        />
+        <h3 className="text-2xl font-semibold mt-4 text-[#334155]">
+          BabyDog's Buddy
+        </h3>
+        <p className="text-[#475569] mt-2">
+          A new addition to the family, equally adorable! 🐶✨
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Footer */}
       <footer className="bg-[#D0A77F] p-6 text-center">
         <div className="flex items-center justify-center space-x-2 text-black font-semibold">
