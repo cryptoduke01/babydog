@@ -11,7 +11,7 @@ const App = () => {
       {/* Navbar */}
       <nav className="bg-[#D0A77F] p-4 flex justify-between lg:justify-center items-center sticky top-0 shadow-lg gap-x-10">
         <h1 className="text-2xl lg:text-3xl font-extrabold tracking-wide text-[#000000]">
-          $BabyDog
+          BabyDog
         </h1>
         <ul className="flex space-x-6 text-black items-center">
           <li>
@@ -57,10 +57,10 @@ const App = () => {
         {/* Text Content */}
         <div className="max-w-md text-center lg:text-left">
           <h2 className="text-5xl lg:text-6xl font-bold text-[#000000]">
-            $BabyDog <span className="text-[#D0A77F]">MAX</span>
+            BabyDog <span className="text-[#D0A77F]">$MAX</span>
           </h2>
           <p className="mt-4 text-lg lg:text-xl font-medium text-[#475569]">
-            The cute little dog of Solana is staring at you, adore him! 🐾✨
+            The cute little Baby Dog of Solana is staring at you, adore him! 🐾✨
           </p>
           <div className="flex justify-center lg:justify-start space-x-6 mt-6">
             <a
@@ -112,7 +112,7 @@ const App = () => {
               Tokenomics
             </h2>
             <p className="text-lg lg:text-xl text-[#475569]">
-              Discover the economics behind $BabyDog (MAX) and how we bring
+              Discover the economics behind BabyDog ($MAX) and how we bring
               value to our holders.
             </p>
           </div>
