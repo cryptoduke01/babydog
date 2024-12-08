@@ -131,7 +131,7 @@ const App = () => {
             <p className="text-lg text-[#475569]">
               <span className="font-bold">Address:</span> <br />
               <span id="contract-address" className="text-[#1d4ed8]">
-                (Add contract address here later)
+                AUTJVKHTwS2Jj6wG3C1gM5tytMbza6GQWkQ4CW8CY2H
               </span>
             </p>
           </div>
