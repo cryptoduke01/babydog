@@ -107,8 +107,7 @@ const App = () => {
           <div className="bg-[#f9fafb] shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow">
             <h2 className="text-3xl font-bold mb-4 text-[#334155]">About</h2>
             <p className="text-lg text-[#475569]">
-              Learn more about Baby Dog's journey as the cutest memecoin on
-              Solana.
+              The cute little dog on Solana is staring at you, adore him🐶
             </p>
           </div>
 
