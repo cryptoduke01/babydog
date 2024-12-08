@@ -56,11 +56,24 @@ const App = () => {
   <div className="absolute inset-0 bg-gradient-to-tr from-[#7dd3fc]/50 via-[#d0a77f]/30 to-[#a5b4fc]/40 z-0 pointer-events-none"></div>
   <div className="absolute -top-10 -left-20 w-48 h-48 bg-[#d0a77f]/20 rounded-full filter blur-3xl z-0"></div>
   <div className="absolute -bottom-20 -right-16 w-64 h-64 bg-[#7dd3fc]/30 rounded-full filter blur-2xl z-0"></div>
-  <div className="absolute top-1/3 left-10 text-[#475569]/20 z-0 animate-spin-slow">
-    <FaTwitter className="w-20 h-20" />
+
+  {/* Crypto Icons */}
+  <div className="absolute top-1/4 left-10 text-[#475569]/20 z-0 animate-float">
+    <SiSolana className="w-20 h-20" />
   </div>
-  <div className="absolute bottom-1/3 right-10 text-[#475569]/20 z-0 animate-spin-reverse">
-    <FaTelegram className="w-16 h-16" />
+  <div className="absolute bottom-1/4 right-10 text-[#475569]/20 z-0 animate-bounce">
+    <img
+      src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=024"
+      alt="Ethereum"
+      className="w-16 h-16 opacity-80"
+    />
+  </div>
+  <div className="absolute top-1/3 right-1/3 text-[#475569]/10 z-0 animate-pulse">
+    <img
+      src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=024"
+      alt="Bitcoin"
+      className="w-24 h-24"
+    />
   </div>
 
   {/* Text Content */}
@@ -102,7 +115,6 @@ const App = () => {
     />
   </div>
 </header>
-
       {/* About, Tokenomics, Roadmap, Contact */}
       <section className="bg-white py-10 lg:py-20 px-6 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
