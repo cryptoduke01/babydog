@@ -118,11 +118,10 @@ const App = () => {
           </div>
           <div id="roadmap" className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[#334155]">
-              Roadmap
+              Contract Address
             </h2>
             <p className="text-lg lg:text-xl text-[#475569]">
-              Explore our exciting milestones and plans for the future of
-              $BabyDog.
+              Grab a bag of $MAX and keep Baby Dog smiling. We moon together.
             </p>
           </div>
           <div id="contact" className="text-center">
