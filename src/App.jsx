@@ -57,7 +57,7 @@ const App = () => {
         {/* Text Content */}
         <div className="max-w-md text-center lg:text-left">
           <h2 className="text-5xl lg:text-6xl font-bold text-[#000000]">
-            BabyDog <span className="text-[#D0A77F]">$MAX</span>
+            BabyDog <br /> <span className="text-[#D0A77F]">$MAX</span>
           </h2>
           <p className="mt-4 text-lg lg:text-xl font-medium text-[#475569]">
             The cute little Baby Dog of Solana is staring at you, adore him! 🐾✨
