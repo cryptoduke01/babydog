@@ -1,6 +1,6 @@
 import "./App.css";
 import BabyDog from "./assets/babydog.jpeg";
-import NewDog from "./assets/newdog.jpeg"; // Replace with the correct file name of the new image
+import NewDog from "./assets/IMG_20241208_221044_267.jpg"; // Replace with the correct file name of the new image
 import dex from "./assets/dex.svg";
 import { FaTwitter, FaTelegram } from "react-icons/fa";
 import { SiSolana } from "react-icons/si";
