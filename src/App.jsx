@@ -1,6 +1,6 @@
 import "./App.css";
 import BabyDog from "./assets/babydog.jpeg";
-import dex from './assets/dex.svg'
+import dex from "./assets/dex.svg";
 import { FaTwitter, FaTelegram } from "react-icons/fa";
 import { SiSolana } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
@@ -9,8 +9,8 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#7dd3fc] to-[#a5b4fc] flex flex-col font-sans">
       {/* Navbar */}
-      <nav className="bg-[#D0A77F] p-4 flex justify-between lg:justify-center items-center sticky top-0 shadow-lg gap-x-10">
-        <h1 className="text-2xl lg:text-3xl font-extrabold tracking-wide text-[#000000]">
+      <nav className="bg-[#D0A77F] p-4 flex justify-between lg:justify-center items-center sticky top-0 shadow-lg gap-x-10 z-50 transition-all duration-500">
+        <h1 className="text-2xl lg:text-3xl font-extrabold tracking-wide text-[#000000] hover:scale-110 transform transition-all duration-300">
           BabyDog
         </h1>
         <ul className="flex space-x-6 text-black items-center">
@@ -19,7 +19,7 @@ const App = () => {
               href="https://x.com/MaxOnSolan_?t=_jq6XJT_ZSXof-xPi2Fa3Q&s=09"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#1DA1F2]"
+              className="hover:text-[#1DA1F2] transform transition-transform hover:scale-125"
             >
               <FaTwitter className="w-6 h-6" />
             </a>
@@ -29,7 +29,7 @@ const App = () => {
               href="https://t.me/BabyDogOnSol"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#0088cc]"
+              className="hover:text-[#0088cc] transform transition-transform hover:scale-125"
             >
               <FaTelegram className="w-6 h-6" />
             </a>
@@ -39,7 +39,7 @@ const App = () => {
               href="https://dexscreener.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#6B7280]"
+              className="hover:text-[#6B7280] transform transition-transform hover:scale-125"
             >
               <img
                 src={dex}
@@ -51,54 +51,56 @@ const App = () => {
         </ul>
       </nav>
 
-
       {/* Hero Section */}
       <header className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-80px)] p-6 lg:p-16 space-y-6 lg:space-y-0 lg:space-x-10">
         {/* Text Content */}
-        <div className="max-w-md text-center lg:text-left">
-          <h2 className="text-5xl lg:text-6xl font-bold text-[#000000]">
+        <div className="max-w-md text-center lg:text-left animate-fade-in">
+          <h2 className="text-5xl lg:text-6xl font-bold text-[#000000] hover:text-[#D0A77F] transition-colors duration-300">
             BabyDog <br /> <span className="text-[#D0A77F]">$MAX</span>
           </h2>
-          <p className="mt-4 text-lg lg:text-xl font-medium text-[#475569]">
+          <p className="mt-4 text-lg lg:text-xl font-medium text-[#475569] hover:text-[#000] transition-colors duration-300">
             The cute little Baby Dog of Solana is staring at you, adore him! 🐾✨
           </p>
           <div className="flex justify-center lg:justify-start space-x-6 mt-6">
             <a
               href="https://x.com/MaxOnSolan_?t=_jq6XJT_ZSXof-xPi2Fa3Q&s=09"
-              className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
+              className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#1DA1F2] transition-all transform hover:scale-125"
             >
               <FaTwitter className="w-6 h-6" />
             </a>
             <a
               href="https://t.me/BabyDogOnSol"
-              className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
+              className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#0088cc] transition-all transform hover:scale-125"
             >
               <FaTelegram className="w-6 h-6" />
             </a>
             <a
               href="https://dexscreener.com"
-              className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
+              className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#6B7280] transition-all transform hover:scale-125"
             >
-              <img src={dex} className="w-6 h-6 bg-black rounded-full border-7 border-[#fff]" alt="" />
+              <img src={dex} className="w-6 h-6 rounded-full" alt="" />
             </a>
           </div>
         </div>
 
         {/* Dog Image */}
-        <div>
+        <div className="relative group animate-bounce">
           <img
             src={BabyDog}
             alt="Baby Dog"
-            className="w-72 h-72 lg:w-80 lg:h-80 object-cover rounded-full border-8 border-[#D0A77F] shadow-xl"
+            className="w-72 h-72 lg:w-80 lg:h-80 object-cover rounded-full border-8 border-[#D0A77F] shadow-xl transition-all duration-500 group-hover:scale-110"
           />
+          <div className="absolute inset-0 bg-[#D0A77F] opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-full"></div>
         </div>
       </header>
 
-
       {/* About, Tokenomics, Roadmap, Contact */}
-      <section className="bg-white p-10 lg:p-20">
+      <section className="bg-white p-10 lg:p-20 space-y-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div id="about" className="text-center">
+          <div
+            id="about"
+            className="text-center hover:scale-105 transition-transform duration-300"
+          >
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[#334155]">
               About
             </h2>
@@ -107,7 +109,10 @@ const App = () => {
               Solana.
             </p>
           </div>
-          <div id="tokenomics" className="text-center">
+          <div
+            id="tokenomics"
+            className="text-center hover:scale-105 transition-transform duration-300"
+          >
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[#334155]">
               Tokenomics
             </h2>
@@ -116,7 +121,10 @@ const App = () => {
               value to our holders.
             </p>
           </div>
-          <div id="roadmap" className="text-center">
+          <div
+            id="roadmap"
+            className="text-center hover:scale-105 transition-transform duration-300"
+          >
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[#334155]">
               Contract Address
             </h2>
@@ -124,7 +132,10 @@ const App = () => {
               Grab a bag of $MAX and keep Baby Dog smiling. We moon together.
             </p>
           </div>
-          <div id="contact" className="text-center">
+          <div
+            id="contact"
+            className="text-center hover:scale-105 transition-transform duration-300"
+          >
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[#334155]">
               Contact
             </h2>
@@ -137,9 +148,9 @@ const App = () => {
 
       {/* Footer */}
       <footer className="bg-[#D0A77F] p-6 text-center">
-        <div className="flex items-center justify-center space-x-2 text-black font-semibold">
+        <div className="flex items-center justify-center space-x-2 text-black font-semibold animate-pulse">
           <SiSolana className="w-6 h-6" />
-          <p>© 2024 Baby Dog (MAX). Made with ❤️ for the Solana ecosystem.</p>
+          <p>© 2024 Baby Dog ($MAX). Made with ❤️ for the Solana ecosystem.</p>
         </div>
       </footer>
     </div>
