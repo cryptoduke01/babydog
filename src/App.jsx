@@ -36,7 +36,7 @@ const App = () => {
           </li>
           <li>
             <a
-              href="https://dexscreener.com"
+              href="https://dexscreener.com/solana/AUTJVKHTwS2Jj6wG3C1gM5tytMbza6GQWkQ4CW8CY2H"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#6B7280] transition-transform transform hover:scale-125"
@@ -84,7 +84,7 @@ const App = () => {
         <FaTelegram className="w-6 h-6" />
       </a>
       <a
-        href="https://dexscreener.com"
+        href="https://dexscreener.com/solana/AUTJVKHTwS2Jj6wG3C1gM5tytMbza6GQWkQ4CW8CY2H"
         className="bg-[#000000] text-white p-3 rounded-full shadow-lg hover:bg-[#000000]"
       >
         <img src={dex} className="w-6 h-6 bg-black rounded-full border-7 border-[#fff]" alt="" />
